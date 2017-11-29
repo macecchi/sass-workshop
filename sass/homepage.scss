@@ -17,29 +17,29 @@ input {
     border: 1px solid $primary-color;
     border-radius: 5px;
     padding: 10px 15px;
-}
 
-input[type=button],
-input[type=submit] {
-    background-color: $primary-color;
-    color: #ffffff;
-    cursor: pointer;
-}
+    &[type=button],
+    &[type=submit] {
+        background-color: $primary-color;
+        color: #ffffff;
+        cursor: pointer;
 
-input:hover[type=button],
-input:hover[type=submit] {
-    border-color: $secondary-color;
-    background-color: $secondary-color;
+        &:hover,
+        &:hover {
+            border-color: $secondary-color;
+            background-color: $secondary-color;
+        }
+    }
 }
 
 a {
     color: $primary-color;
     text-decoration: none;
     font-weight: 700;
-}
 
-a:hover {
-    color: #d0021b;
+    &:hover {
+        color: #d0021b;
+    }
 }
 
 header {
@@ -47,14 +47,14 @@ header {
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
-}
 
-header h1 {
-    text-transform: uppercase;
-}
+    h1 {
+        text-transform: uppercase;
+    }
 
-header a {
-    color: #ffffff;
+    a {
+        color: #ffffff;
+    }
 }
 
 .subscribe-button {
