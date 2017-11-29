@@ -1,34 +1,39 @@
+$font-family: proxima-nova, sans-serif;
+$text-color: #222222;
+$primary-color: #08498f;
+$secondary-color: #d0021b;
+
 body {
-    font-family: proxima-nova, sans-serif;
+    font-family: $font-family;
     font-size: 18px;
-    color: #222222;
+    color: $text-color;
     padding: 50px;
 }
 
 input {
-    font-family: proxima-nova, sans-serif;
-    font-size: 18px;
-    color: #222222;
-    border: 1px solid #08498f;
+    font-family: $font-family;
+    font-size: 1em;
+    color: $text-color;
+    border: 1px solid $primary-color;
     border-radius: 5px;
     padding: 10px 15px;
 }
 
 input[type=button],
 input[type=submit] {
-    background-color: #08498f;
+    background-color: $primary-color;
     color: #ffffff;
     cursor: pointer;
 }
 
 input:hover[type=button],
 input:hover[type=submit] {
-    border-color: #d0021b;
-    background-color: #d0021b;
+    border-color: $secondary-color;
+    background-color: $secondary-color;
 }
 
 a {
-    color: #08498f;
+    color: $primary-color;
     text-decoration: none;
     font-weight: 700;
 }
@@ -38,7 +43,7 @@ a:hover {
 }
 
 header {
-    background-color: #08498f;
+    background-color: $primary-color;
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
